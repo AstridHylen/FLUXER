@@ -88,7 +88,7 @@ server <- function(input, output, session) {
       mutate(ID = paste(Code, Unit, Parameter),
              Removed = FALSE) %>% 
       group_by(ID) %>% 
-      filter(sum(!is.na(Conc)) > 2) %>% 
+      filter(sum(!is.na(Conc)) > 1) %>% 
       ungroup()%>% 
       arrange(Code, Parameter, Unit, Sample)
   })
