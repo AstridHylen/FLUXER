@@ -33,7 +33,7 @@ file should contain the following columns:
 -   **Time** – the time since the start of the incubation (minutes).  
 -   **Parameter columns** – individual columns for all measured
     parameters, with the parameter names as the headers and the
-    concentrations in uM (see image below). The concentrations should be
+    concentrations in mol m<sup>-3</sup> (see image below). The concentrations should be
     corrected for any dilutions that have occurred during sampling.
 
 <img src="DataInputExample.png" width="500px" /> <br>
@@ -72,12 +72,12 @@ The output file contains two sheets, ***UnitResults*** and
 
 -   **Code, Unit** – same as input file  
 -   **Parameter** – parameter name  
--   **Flux** – calculated flux (mmol m-2 d-1), where positive values are
+-   **Flux** – calculated flux (mmol m<sup>-2</sup> d<sup>-1</sup>), where positive values are
     fluxes out of the sediment and negative values are fluxes into the
     sediment  
 -   **Fvalue** – F statistic  
 -   **pF** – p value of the F statistic  
--   **FitAICc** – corrected Akaike’s information criterion  
+-   **FitcAIC** – corrected Akaike’s information criterion  
 -   **Fit** – type of regression line (linear or quadratic)  
 -   **AdjR2** – adjusted R2 value  
 -   **A, B, C** – coefficients for the regression equation, where Conc =

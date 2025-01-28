@@ -1,13 +1,10 @@
 # # ==== SETUP ====
-library(shiny)
-library(bslib)
-library(openxlsx)
-library(lmtest)
-library(AICcmodavg)
-library(tidyverse)
-library(patchwork)
-library(ggrepel)
-library()
+list_of_packages = c("shiny", "bslib", "openxlsx", "lmtest", "AICcmodavg",
+                     "tidyverse", "patchwork", "ggrepel")
+
+lapply(list_of_packages, 
+       function(x) if(!require(x,character.only = TRUE)) install.packages(x))
+
 # # ===============
 
 
@@ -209,10 +206,10 @@ server <- function(input, output, session) {
     df <- modelOutput()$unitRes 
     
     df %>%
-      select(Flux, AdjR2, FitAICc) %>%
+      select(Flux, AdjR2, FitcAIC) %>%
       rename("Flux\n(mmol/m2/d)" = Flux,
              "Adj R2\n " = AdjR2,
-             "AICc\n " = FitAICc)
+             "cAIC\n " = FitcAIC)
       
   }, align = "l")
 
@@ -387,7 +384,7 @@ model.fit <- function(df,fit){
                         pF = pf(summary(regModel)$fstatistic[1],
                                 summary(regModel)$fstatistic[2],
                                 summary(regModel)$fstatistic[3],lower.tail = F),
-                        FitAICc = AICc(regModel),
+                        FitcAIC = AICc(regModel),
                         Fit = fit,
                         AdjR2 = summary(regModel)$adj.r.squared, 
                         A = coef(regModel)[[1]],
