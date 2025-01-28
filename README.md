@@ -12,4 +12,6 @@ runGitHub( "Fluxer", "AstridHylen")
 
 The app was written by Astrid Hylén (University of Antwerp, Belgium) and
 Sebastiaan van de Velde (National Institute of Water and Atmospheric
-Research & University of Otago, New Zealand).
+Research & University of Otago, New Zealand). 
+
+[![DOI](https://zenodo.org/badge/920142486.svg)](https://doi.org/10.5281/zenodo.14758688)
