@@ -9,6 +9,7 @@ To access the app from GitHub, simply open RStudio, load the 'shiny' package and
 runGitHub( "Fluxer", "AstridHylen")
 ```
 
+The app should install all required packages automatically, but if this does not work, try manually installing: "shiny", "bslib", "openxlsx", "readxl", "lmtest", "AICcmodavg", "tidyverse", "patchwork", "ggrepel", "markdown"
 
 The app was written by Astrid Hylén (University of Antwerp, Belgium) and
 Sebastiaan van de Velde (National Institute of Water and Atmospheric
