@@ -75,6 +75,8 @@ The output file contains two sheets, ***UnitResults*** and
 -   **Flux** – calculated flux (mmol m<sup>-2</sup> d<sup>-1</sup>), where positive values are
     fluxes out of the sediment and negative values are fluxes into the
     sediment  
+-   **CI_2.5** – 2.5% confidence interval for the flux (mmol m<sup>-2</sup> d<sup>-1</sup>)
+-   **CI_97.5** – 97.5% confidence interval for the flux (mmol m<sup>-2</sup> d<sup>-1</sup>)
 -   **Fvalue** – F statistic  
 -   **pF** – p value of the F statistic  
 -   **FitcAIC** – corrected Akaike’s information criterion  
@@ -82,7 +84,7 @@ The output file contains two sheets, ***UnitResults*** and
 -   **AdjR2** – adjusted R2 value  
 -   **A, B, C** – coefficients for the regression equation, where Conc =
     A + B ∙ Time + C ∙ Time2  
--   **pA, pB, pC** – p values for the coefficients  
+-   **pA, pB, pC** – p values for the regression coefficients  
 -   **StdErrA, StdErrB, StdErrC** – standard error for the coefficients
 
 ***SampleResults***:
