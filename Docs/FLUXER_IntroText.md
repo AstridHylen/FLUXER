@@ -77,6 +77,7 @@ The output file contains two sheets, ***UnitResults*** and
     sediment  
 -   **CI_2.5** – 2.5% confidence interval for the flux (mmol m<sup>-2</sup> d<sup>-1</sup>)
 -   **CI_97.5** – 97.5% confidence interval for the flux (mmol m<sup>-2</sup> d<sup>-1</sup>)
+-   **StdErrFlux** – standard error for the flux (mmol m<sup>-2</sup> d<sup>-1</sup>)
 -   **Fvalue** – F statistic  
 -   **pF** – p value of the F statistic  
 -   **FitcAIC** – corrected Akaike’s information criterion  

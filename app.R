@@ -383,6 +383,7 @@ model.fit <- function(df,fit){
                         Flux = slopeGrad*60*24*unique(df$Height)/100,
                         CI_2.5 = confint(regModel)[2,1]*60*24*unique(df$Height)/100,
                         CI_97.5 = confint(regModel)[2,2]*60*24*unique(df$Height)/100,
+                        StdErrFlux = summary(regModel)$coef[,2][[2]]*60*24*unique(df$Height)/100,
                         Fvalue = summary(regModel)$fstatistic[[1]],
                         pF = pf(summary(regModel)$fstatistic[1],
                                 summary(regModel)$fstatistic[2],
