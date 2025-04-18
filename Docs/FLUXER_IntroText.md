@@ -33,7 +33,7 @@ file should contain the following columns:
 -   **Time** – the time since the start of the incubation (minutes).  
 -   **Parameter columns** – individual columns for all measured
     parameters, with the parameter names as the headers and the
-    concentrations in mol m<sup>-3</sup> (see image below). The concentrations should be
+    concentrations in mmol m<sup>-3</sup> (see image below). The concentrations should be
     corrected for any dilutions that have occurred during sampling.
 
 <img src="DataInputExample.png" width="500px" /> <br>
